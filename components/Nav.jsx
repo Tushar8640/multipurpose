@@ -9,7 +9,8 @@ export default function Nav() {
               <i className="fa fa-phone" aria-hidden="true"></i>+1234567890
             </a>
             <a href="mailto:info@yourmail.com">
-              <i className="fa fa-envelope" aria-hidden="true"></i>info@yourmail.com
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+              info@yourmail.com
             </a>
           </div>
           <nav className="d-flex aic">
@@ -35,7 +36,7 @@ export default function Nav() {
             </ul>
           </nav>
         </div>
-        <nav className="navbar navbar-expand-md navbar-light">
+        <nav className="navbar navbar-expand-md navbar-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="index.html">
               <img src="assets/images/logo.png" alt="Multipurpose" />
@@ -50,7 +51,7 @@ export default function Nav() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon "></span>
               </button>
               <a className="login-icon d-sm-none" href="#">
                 <i className="fa fa-user"></i>
@@ -62,7 +63,10 @@ export default function Nav() {
             <a className="search-icon d-none d-md-block" href="#">
               <i className="fa fa-search"></i>
             </a>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+            <div
+              className="collapse navbar-collapse justify-content-end"
+              id="navbarTogglerDemo02"
+            >
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -95,7 +99,11 @@ export default function Nav() {
                   </a>
                 </li>
               </ul>
-              <form className="bg-white search-form" method="get" id="searchform">
+              <form
+                className="bg-white search-form"
+                method="get"
+                id="searchform"
+              >
                 <div className="input-group">
                   <input
                     className="field form-control"

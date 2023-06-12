@@ -49,7 +49,7 @@ export default function Hero() {
               // install Swiper modules
               className="swiper-container hero-slider"
               spaceBetween={30}
-              slidesPerView={5}
+              slidesPerView={1}
               centeredSlides={true}
               autoplay={{
                 delay: 5000,

@@ -149,19 +149,23 @@ export default function Testimonial() {
             }}
             loop={true}
             speed={900}
-            slidesPerView={5}
+            // slidesPerView={5}
             breakpoints={{
               1200: {
-                slidesPerView: 4,
+                width: 1200,
+                slidesPerView: 5,
               },
               992: {
-                slidesPerView: 3,
+                width: 992,
+                slidesPerView: 4,
               },
               576: {
+                width: 576,
                 slidesPerView: 2,
               },
               400: {
-                slidesPerView: 1,
+                width: 300,
+                slidesPerView: 2,
               },
             }}
             modules={[Autoplay, Pagination, Navigation]}

@@ -29,8 +29,18 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-bottom: 0.5rem;
   font-family: "Rajdhani", sans-serif !important;
   font-weight: 700 !important;
@@ -145,6 +155,7 @@ header::after {
 .nav-link {
   font-family: "Rajdhani", sans-serif;
   text-transform: uppercase;
+  color: white !important;
 }
 
 .contact {
@@ -511,9 +522,8 @@ form button.btn-primary:hover {
   ------------------------------------*/
 .recent-posts {
   padding: 65px 0 100px;
- 
 }
-.recent-posts .text_right{
+.recent-posts .text_right {
   text-align: right;
 }
 
@@ -586,7 +596,7 @@ form button.btn-primary:hover {
 .post-content .post-btn:hover {
   color: #fff;
   background-color: #ee1515;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 /*-----------------------------------
@@ -830,17 +840,13 @@ form button.btn-primary:hover {
 .test-pagination {
   text-align: center;
   margin-top: 8px;
-
 }
-
 
 .testimonials .swiper-pagination {
   text-align: center !important;
   margin-top: 8px !important;
   position: relative;
 }
-
-
 
 .testimonials .swiper-pagination span {
   width: 9px;
@@ -922,6 +928,26 @@ footer {
 
 .footer-widgets {
   padding: 100px 0;
+}
+.footer-widgets .media-body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+}
+.footer-widgets .media-body p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+}
+.footer-widgets .media-body a {
+  text-decoration: none;
+}
+.foot-note a {
+  text-decoration: none;
+}
+.foot-note a:hover {
+  text-decoration: underline;
+}
+.footer-widgets .color_title .media-body h6 a {
+  color: #aa0c0c;
 }
 
 .footer-widgets .col-md-6 .single-widget:not(:first-child) .widget-tiltle {
@@ -1274,6 +1300,12 @@ span {
 /*-----------------------------------
     Small devices (landscape phones, 576px and up)
 ------------------------------------*/
+
+@media (max-width: 576px) {
+  .recent-posts .text_right {
+    text-align: left;
+  }
+}
 @media (min-width: 576px) {
   .top-header {
     padding: 25px 0 15px;
@@ -1287,6 +1319,9 @@ span {
   .recent-posts .row .col-lg-6:nth-of-type(odd) .post-thumb {
     margin-top: 0;
     margin-left: 25px;
+  }
+  .recent-posts .text_right {
+    text-align: left;
   }
   .recent-posts .row .col-lg-6:nth-of-type(even) .post-thumb {
     margin-bottom: 0;

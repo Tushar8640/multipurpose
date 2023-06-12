@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-3">
+            <div className="col-md-6 col-xl-3 color_title">
               <div
                 className="single-widget twitter-widget"
                 data-aos="fade-up"
