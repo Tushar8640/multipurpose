@@ -176,22 +176,22 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="assets/images/client2.png" alt="Client 2" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="assets/images/client3.png" alt="Client 3" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="assets/images/client4.png" alt="Client 4" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="swiper-slide">
+              <div className="swiper-slide">
                 <img src="assets/images/client5.png" alt="Client 5" />
               </div>
             </SwiperSlide>

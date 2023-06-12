@@ -11,7 +11,7 @@ export default function Recent() {
               data-aos-duration="800"
             >
               <div className="post-content text_right">
-                <time datetime="2019-04-06T13:53">15 Oct, 2019</time>
+                <time dateTime="2019-04-06T13:53">15 Oct, 2019</time>
                 <h3>
                   <a href="#">Proudly for us to build stylish</a>
                 </h3>
@@ -46,7 +46,7 @@ export default function Recent() {
                 />
               </div>
               <div className="post-content">
-                <time datetime="2019-04-06T13:53">15 Oct, 2019</time>
+                <time dateTime="2019-04-06T13:53">15 Oct, 2019</time>
                 <h3>
                   <a href="#">Remind me to water the plants</a>
                 </h3>
@@ -68,7 +68,7 @@ export default function Recent() {
               data-aos-duration="800"
             >
               <div className="post-content text_right">
-                <time datetime="2019-04-06T13:53">15 Oct, 2019</time>
+                <time dateTime="2019-04-06T13:53">15 Oct, 2019</time>
                 <h3>
                   <a href="#">Add apples to the grocery list</a>
                 </h3>
@@ -104,7 +104,7 @@ export default function Recent() {
                 />
               </div>
               <div className="post-content">
-                <time datetime="2019-04-06T13:53">15 Oct, 2019</time>
+                <time dateTime="2019-04-06T13:53">15 Oct, 2019</time>
                 <h3>
                   <a href="#">Make it warmer downstairs</a>
                 </h3>
