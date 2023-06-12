@@ -793,6 +793,7 @@ form button.btn-primary:hover {
   padding: 95px 0 85px;
   color: #fff;
   border-bottom: 1px solid #26264b;
+  position: relative;
 }
 
 .testimonials .test-img {
@@ -829,6 +830,25 @@ form button.btn-primary:hover {
 .test-pagination {
   text-align: center;
   margin-top: 8px;
+
+}
+
+
+.testimonials .swiper-pagination {
+  text-align: center !important;
+  margin-top: 8px !important;
+  position: relative;
+}
+
+
+
+.testimonials .swiper-pagination span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #26264b;
+  margin-bottom: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .test-pagination span {
@@ -847,11 +867,19 @@ form button.btn-primary:hover {
 .test-pagination span:not(:last-child) {
   margin-right: 10px;
 }
+.testimonials span:not(:last-child) {
+  margin-right: 10px;
+}
 
 .test-pagination span.swiper-pagination-bullet-active {
-  width: 12px;
-  height: 12px;
-  background-color: white;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: white !important;
+}
+.testimonials span.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: white !important;
 }
 
 /*-----------------------------------
@@ -1141,6 +1169,17 @@ span {
   color: white;
   font-size: 20px;
 }
+
+/* .swiper-pagination {
+  
+}
+
+.swiper-pagination-bullet {
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white !important;
+} */
 
 .swiper-button-disabled {
   opacity: 0.5;

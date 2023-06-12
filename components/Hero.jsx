@@ -49,6 +49,7 @@ export default function Hero() {
               // install Swiper modules
               className="swiper-container hero-slider"
               spaceBetween={30}
+              slidesPerView={5}
               centeredSlides={true}
               autoplay={{
                 delay: 5000,
@@ -63,12 +64,10 @@ export default function Hero() {
                 prevEl: prevRef.current,
                 nextEl: nextRef.current,
               }}
-            
               modules={[Autoplay, Pagination, Navigation]}
               onInit={() => {
                 setInit(true);
               }}
-              
             >
               <SwiperSlide>
                 <div className="swiper-slide slide-content d-flex align-items-center">

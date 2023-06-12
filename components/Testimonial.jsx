@@ -32,14 +32,16 @@ export default function Testimonial() {
               prevEl: prevRef.current,
               nextEl: nextRef.current,
             }}
-            pagination={true}
+            pagination={{
+              clickable: true,
+            }}
             modules={[Autoplay, Pagination, Navigation]}
             onInit={() => {
               setInit(true);
             }}
           >
             <SwiperSlide>
-            <div className="swiper-slide text-center">
+              <div className="swiper-slide text-center">
                 <div className="row">
                   <div className="offset-lg-1 col-lg-10">
                     <div
@@ -63,8 +65,9 @@ export default function Testimonial() {
                       data-aos-delay="400"
                       data-aos-duration="600"
                       data-aos-offset="0"
-                      >UI/UX Designer</span
                     >
+                      UI/UX Designer
+                    </span>
                     <p
                       data-aos="fade-up"
                       data-aos-delay="600"
@@ -83,7 +86,7 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="swiper-slide text-center">
+              <div className="swiper-slide text-center">
                 <div className="row">
                   <div className="offset-lg-1 col-lg-10">
                     <div
@@ -107,8 +110,9 @@ export default function Testimonial() {
                       data-aos-delay="400"
                       data-aos-duration="600"
                       data-aos-offset="0"
-                      >UI/UX Designer</span
                     >
+                      UI/UX Designer
+                    </span>
                     <p
                       data-aos="fade-up"
                       data-aos-delay="600"
@@ -135,26 +139,64 @@ export default function Testimonial() {
           data-aos-delay="200"
           data-aos-duration="600"
         >
-          <div className="swiper-container clients-slider">
-            <div className="swiper-wrapper">
+          <Swiper
+            // install Swiper modules
+            className="swiper-container  clients-slider"
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 3000,
+            }}
+            loop={true}
+            speed={900}
+            slidesPerView={5}
+            breakpoints={{
+              1200: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 3,
+              },
+              576: {
+                slidesPerView: 2,
+              },
+              400: {
+                slidesPerView: 1,
+              },
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+          >
+            <SwiperSlide>
               <div className="swiper-slide">
                 <img src="assets/images/client1.png" alt="Client 1" />
               </div>
-              <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="swiper-slide">
                 <img src="assets/images/client2.png" alt="Client 2" />
               </div>
-              <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="swiper-slide">
                 <img src="assets/images/client3.png" alt="Client 3" />
               </div>
-              <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="swiper-slide">
                 <img src="assets/images/client4.png" alt="Client 4" />
               </div>
-              <div className="swiper-slide">
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="swiper-slide">
                 <img src="assets/images/client5.png" alt="Client 5" />
               </div>
-            </div>
-            <div className="test-pagination"></div>
-          </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swiper-slide">
+                <img src="assets/images/client1.png" alt="Client 1" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>
