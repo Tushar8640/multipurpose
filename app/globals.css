@@ -1301,11 +1301,6 @@ span {
     Small devices (landscape phones, 576px and up)
 ------------------------------------*/
 
-@media (max-width: 576px) {
-  .recent-posts .text_right {
-    text-align: left;
-  }
-}
 @media (min-width: 576px) {
   .top-header {
     padding: 25px 0 15px;
@@ -1500,5 +1495,22 @@ span {
 @media (min-width: 1400px) {
   .container {
     max-width: 1140px !important;
+  }
+}
+
+.about-page {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  .recent-posts .text_right {
+    text-align: left;
+  }
+  .about-page {
+    top: 80%;
   }
 }

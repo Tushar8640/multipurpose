@@ -1,4 +1,7 @@
 "use client";
+
+import Link from "next/link";
+
 export default function Nav() {
   return (
     <header className="position-absolute w-100">
@@ -69,14 +72,14 @@ export default function Nav() {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link href="/" className="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link href="/about" className="nav-link">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">

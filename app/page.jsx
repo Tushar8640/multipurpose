@@ -15,7 +15,6 @@ import Cta1 from "@/components/Cta1";
 export default function Home() {
   return (
     <>
-      <Nav />
       <Hero />
 
       <Cta1 />
